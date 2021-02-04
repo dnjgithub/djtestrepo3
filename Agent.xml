@@ -1,0 +1,152 @@
+<NSDeploymentPackage rcVersion="13.2.1.1881.083017">
+  <Name catalogVersion="" vendorName="">Agent-SI--Service-Name-Special-Characters-Double-Encoding-Issue-Outbound-nsXML-Message</Name>
+  <TypeID>3</TypeID>
+  <DeploymentOptions>ou_primary_content_exists_overwrite,ou_associated_retain_bindings,groups_primary_content_exists_overwrite,groups_associated_retain_bindings,people_primary_content_exists_overwrite,people_associated_retain_bindings,queues_primary_content_exists_overwrite,queues_associated_retain_bindings,categories_primary_content_exists_overwrite,categories_associated_retain_bindings,roles_primary_content_exists_overwrite,roles_associated_retain_bindings,email_templates_primary_content_exists_overwrite,agents_primary_content_exists_overwrite,serviceitems_primary_content_exists_merge,standards_primary_content_exists_merge,agreementTemps_primary_content_exists_merge,billingrates_primary_content_exists_overwrite,team_primary_content_exists_overwrite,service_primary_content_exists_update,service_update_bind_exists_general</DeploymentOptions>
+  <Guid>2BC764B6-FB20-421F-8221-48E775CC7318</Guid>
+  <Description>Agent-SI--Service-Name-Special-Characters-Double-Encoding-Issue-Outbound-nsXML-Message</Description>
+  <EntityXML>Entity XML</EntityXML>
+  <DeploymentXML><rex>
+  <Header requestAction="put">
+    <Params>
+      <DatasourceOverride>--LOCALDATASOURCE--</DatasourceOverride>
+      <OptionSetNameDefault>catalogDeployerDefault</OptionSetNameDefault>
+      <ServiceDefinitionOnMatchFound>update</ServiceDefinitionOnMatchFound>
+      <UpdateServiceGeneral>true</UpdateServiceGeneral>
+      <QueueOnMatchFound>overwrite</QueueOnMatchFound>
+      <QueueDeployAssociations>false</QueueDeployAssociations>
+      <GroupOnMatchFound>overwrite</GroupOnMatchFound>
+      <GroupDeployAssociations>false</GroupDeployAssociations>
+      <OrganizationalUnitOnMatchFound>overwrite</OrganizationalUnitOnMatchFound>
+      <OrganizationalUnitDeployAssociations>false</OrganizationalUnitDeployAssociations>
+      <RoleOnMatchFound>overwrite</RoleOnMatchFound>
+      <RoleDeployAssociations>false</RoleDeployAssociations>
+      <PersonOnMatchFound>overwrite</PersonOnMatchFound>
+      <PersonDeployAssociations>false</PersonDeployAssociations>
+      <CategoryOnMatchFound>overwrite</CategoryOnMatchFound>
+      <CategoryDeployAssociations>false</CategoryDeployAssociations>
+      <AgentOnMatchFound>overwrite</AgentOnMatchFound>
+      <EmailTemplateOnMatchFound>overwrite</EmailTemplateOnMatchFound>
+      <ServiceItemDefinitionOnMatchFound>merge</ServiceItemDefinitionOnMatchFound>
+      <StandardDefinitionOnMatchFound>merge</StandardDefinitionOnMatchFound>
+      <AgreementTemplateOnMatchFound>merge</AgreementTemplateOnMatchFound>
+      <BillingRateOnMatchFound>overwrite</BillingRateOnMatchFound>
+      <TeamMatchFound>overwrite</TeamMatchFound>
+    </Params>
+  </Header>
+  <Agents>
+    <Agent name="Dummy Adapter - Double Encoding Issue for Service Name With Special Characters Passed in Outbound nsXML Message" action="Dummy Adapter - Double Encoding Issue for Service Name With Special Characters Passed in Outbound nsXML Message" contextType="0" inboundAdapter="" outboundAdapter="Dummy Adapter" inboundTransformation="" outboundTransformation="" emailTemplate="" pollInterval="0" maxRetry="0" retryInterval="0" baseTransformation="DataWithoutServiceNSXML" createdBy="admin" modifiedBy="admin">
+      <AdapterProperties/>
+      <Parameters>
+        <Parameter name="Service Name" inDataSpec="" outDataExpression="#SIBD_Service_Dummy.Name#" outResponseParam="" inboundUsage="not-used" outboundUsage="optional" outboundResponseUsage="not-used"/>
+      </Parameters>
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <RelatedEntities/>
+    </Agent>
+  </Agents>
+  <MDRDataTypes>
+    <DataType name="Service_Dummy" logicName="SiService_Dummy" domainName="ASSETS" classificationName="TC - Service Item Group" statusable="false" isHidden="false" enableStackConfiguration="false" shareable="true" hierarchyEnabled="false" hasSubscriptionFlag="true">
+      <DataTypeDefinition name="Name" containingDataTypeName="Service_Dummy" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="true" showInMyStuffGrid="true">
+        <Caption><![CDATA[Name]]></Caption>
+        <Mandatory><![CDATA[true]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[1]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <StatusDefinitions/>
+      <OperationDefinitions>
+        <OperationDefinition operation="Create" isBillable="false" resultingStatus="&lt;s ID=&quot;14447&quot;/&gt;"/>
+        <OperationDefinition operation="Delete" isBillable="false" resultingStatus="&lt;s ID=&quot;14447&quot;/&gt;"/>
+        <OperationDefinition operation="Update" isBillable="false" resultingStatus="&lt;s ID=&quot;14447&quot;/&gt;"/>
+      </OperationDefinitions>
+      <PermissionsAssignment>
+        <OperationsTheyArePermitted>
+          <Operation name="mdr_datatype_read" displayName="mdr_datatype_read">
+            <Objects>
+              <Object name="Person" displayName="Person">
+                <Instances>
+                  <PersonName name="&lt;s ID=&quot;2124&quot;/&gt;&lt;s ID=&quot;2124&quot;/&gt;" loginName="admin" guid="16D09143-7429-40D0-B3AD-74F0EEE98B6D"/>
+                </Instances>
+              </Object>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="TC - Service Group" type="roletypeuserdefined"/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="mdr_datatype_write" displayName="mdr_datatype_write">
+            <Objects>
+              <Object name="Person" displayName="Person">
+                <Instances>
+                  <PersonName name="&lt;s ID=&quot;2124&quot;/&gt;&lt;s ID=&quot;2124&quot;/&gt;" loginName="admin" guid="16D09143-7429-40D0-B3AD-74F0EEE98B6D"/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </DataType>
+  </MDRDataTypes>
+  <MDRClassifications>
+    <Classification name="TC - Service Item Group" domainName="ASSETS">
+      <LogicName><![CDATA[TC - Service Item Group]]></LogicName>
+      <Permissible><![CDATA[false]]></Permissible>
+      <SystemDefined><![CDATA[false]]></SystemDefined>
+      <FirstTreeNode><![CDATA[false]]></FirstTreeNode>
+      <PermissionsAssignment>
+        <OperationsTheyArePermitted>
+          <Operation name="mdr_class_read" displayName="mdr_class_read">
+            <Objects>
+              <Object name="Person" displayName="Person">
+                <Instances>
+                  <PersonName name="&lt;s ID=&quot;2124&quot;/&gt;&lt;s ID=&quot;2124&quot;/&gt;" loginName="admin" guid="16D09143-7429-40D0-B3AD-74F0EEE98B6D"/>
+                </Instances>
+              </Object>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="TC - Service Group" type="roletypeuserdefined"/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="mdr_class_write" displayName="mdr_class_write">
+            <Objects>
+              <Object name="Person" displayName="Person">
+                <Instances>
+                  <PersonName name="&lt;s ID=&quot;2124&quot;/&gt;&lt;s ID=&quot;2124&quot;/&gt;" loginName="admin" guid="16D09143-7429-40D0-B3AD-74F0EEE98B6D"/>
+                </Instances>
+              </Object>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="TC - Service Group" type="roletypeuserdefined"/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </Classification>
+  </MDRClassifications>
+</rex></DeploymentXML>
+  <HasImage>false</HasImage>
+  <CreatorObjectId>0</CreatorObjectId>
+  <CreatorObjectInstanceId>0</CreatorObjectInstanceId>
+  <DocSize>0</DocSize>
+  <TenantId>0</TenantId>
+  <UploadedBy>0</UploadedBy>
+</NSDeploymentPackage>
