@@ -1,0 +1,871 @@
+<NSDeploymentPackage rcVersion="13.2.1.0001.060321">
+  <Name catalogVersion="" vendorName="">Testpkg25June</Name>
+  <TypeID>1</TypeID>
+  <DeploymentOptions></DeploymentOptions>
+  <Guid>3FC81116-7A58-4481-A133-734523206372</Guid>
+  <Description>Testpkg25June</Description>
+  <EntityXML>Entity XML</EntityXML>
+  <DeploymentXML><rex>
+  <Header requestAction="put">
+    <Params>
+      <DatasourceOverride>--LOCALDATASOURCE--</DatasourceOverride>
+      <OptionSetNameDefault>catalogDeployerDefault</OptionSetNameDefault>
+      <ServiceDefinitionPermitMissingAssociatedService>false</ServiceDefinitionPermitMissingAssociatedService>
+    </Params>
+  </Header>
+  <ServiceDefinitions>
+    <ServiceDefinition name="Activity SVG" serviceGroupName="0 Service Icons" catalogName="" type="notspecified" isActive="true" isReportable="false" isEntitlement="false" isOrderable="false" computePrice="false" authorizations="site" canStartLater="false" dateQuality="tbd" guid="E326E6C2-F502-4A77-9210-B77E3F927CC4" orderingMode="Add review enabled" paginationViewMode="Classic View" hideInServiceCatalog="false" hideInMyOrders="false" isTemplate="false" showOrderSummary="false" maxQuantity="0" isBaseService="false" templateType="null" tenantRelevant="false">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Duration value="0.0" units="hours" isDefinedDuration="false"/>
+      <Billing rate="0.0" type="none"/>
+      <Expensing expenseCode=""/>
+      <Authorization>
+        <ServiceGroupReview>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2000.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;6322&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupReview>
+        <ServiceGroupAuthorization>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2300.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;3522&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupAuthorization>
+      </Authorization>
+      <Presentation>
+        <PresentationElement name="Activity.svg" serverName="Activity.svg" size="1621" contentStorage="database" contentType="image/svg+xml" uploadDate="2020-12-15 05:27:29.0" guid="4BF0541C-24AE-4B93-81C4-4A785EDB2B1F">
+          <Content>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBB
+ZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9u
+OiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBT
+VkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzEx
+LmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3
+LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxp
+bmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94
+PSIwIDAgMTYgMTYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE2IDE2IiB4bWw6c3BhY2U9
+InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiMwRjBGMEYiIGQ9Ik0xNS40NjksMTEuMDkxaC0xLjIz
+di0xLjQzYzAtMC4wMDgtMC4wMDYtMC4wMTQtMC4wMDctMC4wMjFjMC4wMDEtMC4wMTIsMC4wMDct
+MC4wMjEsMC4wMDctMC4wMzMNCgljMC0wLjE4NC0wLjE0Ny0wLjMzNi0wLjMzMy0wLjMzNkg4LjM1
+NFY4LjQzM2gyLjc4NWMwLjMsMCwwLjU5NS0wLjI0OCwwLjY1Ny0wLjU1NWwwLjg1Ny0zLjg4Mw0K
+CWMwLjA2My0wLjMwNi0wLjEyOS0wLjU1NS0wLjQyOS0wLjU1NWgtNi41NWMtMC4zLDAtMC41OTQs
+MC4yNDktMC42NTgsMC41NTVMNC4yMjcsNy42MDFINC4xNjVWMi41NTNoNy42NjlWMi4zMzENCglj
+MC0wLjMwNy0wLjI0OC0wLjU1NS0wLjU1NS0wLjU1NUg3LjIxNlYxLjIyYzAtMC4zMDYtMC4yNDkt
+MC41NTMtMC41NTUtMC41NTNIMy44ODhjLTAuMzA3LDAtMC41NTUsMC4yNDgtMC41NTUsMC41NTV2
+Ni42NTYNCgljMCwwLjMwNywwLjI0OCwwLjU1NSwwLjU1NSwwLjU1NWgzLjgxMXYwLjgzOEg3LjQ5
+NkgzLjE1M2gtMS4wNGMtMC4xODUsMC0wLjMxNiwwLjEzNS0wLjMxNiwwLjMxOWMwLDAuMDE4LDAu
+MDA3LDAuMDMzLDAuMDEsMC4wNQ0KCWMtMC4wMDIsMC4wMTItMC4wMSwwLjAyMS0wLjAxLDAuMDMy
+djEuNDE5SDAuNTNDMC4yMzcsMTEuMDkxLDAsMTEuMzI3LDAsMTEuNjJ2My4xODRjMCwwLjI5Myww
+LjIzNywwLjUyOSwwLjUzLDAuNTI5aDMuMTgzDQoJYzAuMjkzLDAsMC41My0wLjIzNiwwLjUzLTAu
+NTI5VjExLjYyYzAtMC4yOTMtMC4yMzctMC41MjktMC41My0wLjUyOWgtMS4yNlY5LjkyN2gzLjc4
+NmgxLjQ2NnYxLjE2NEg2LjQwOA0KCWMtMC4yOTIsMC0wLjUzLDAuMjM2LTAuNTMsMC41Mjl2My4x
+ODRjMCwwLjI5MywwLjIzOCwwLjUyOSwwLjUzLDAuNTI5aDMuMTgzYzAuMjkzLDAsMC41My0wLjIz
+NiwwLjUzLTAuNTI5VjExLjYyDQoJYzAtMC4yOTMtMC4yMzctMC41MjktMC41My0wLjUyOUg4LjM1
+OVY5LjkyN2g1LjIyM3YxLjE2NGgtMS4yOTVjLTAuMjkzLDAtMC41MzEsMC4yMzYtMC41MzEsMC41
+Mjl2My4xODQNCgljMCwwLjI5MywwLjIzOCwwLjUyOSwwLjUzMSwwLjUyOWgzLjE4MmMwLjI5Myww
+LDAuNTMxLTAuMjM2LDAuNTMxLTAuNTI5VjExLjYyQzE2LDExLjMyNywxNS43NjIsMTEuMDkxLDE1
+LjQ2OSwxMS4wOTF6Ii8+DQo8L3N2Zz4NCg==</Content>
+        </PresentationElement>
+        <Description>
+          <Icon documentId="10" name="Activity.svg"/>
+          <Text><![CDATA[Can be used for a service delivery activity or a workflow step.]]></Text>
+        </Description>
+        <SectionOne isEnabled="false"/>
+        <SectionTwo isEnabled="false"/>
+        <SectionThree isEnabled="false"/>
+      </Presentation>
+      <PositionNames>
+        <PositionName name="Author" type="Service" serviceDefinitionName="Activity SVG" serviceDefinitionGuid="E326E6C2-F502-4A77-9210-B77E3F927CC4" objectType="Person" instanceName="admin"/>
+      </PositionNames>
+      <Categories>
+        <ConsumerServicesCategories>
+          <CategoryName name="Welcome to your ITaaS storefront" string="Welcome to your ITaaS storefront"/>
+        </ConsumerServicesCategories>
+        <ServicePortfoliosCategories/>
+      </Categories>
+      <AssociatedKeywords/>
+      <AssociatedObjectives/>
+      <Pricing price="0.0" pricingSchema="fixedprice" pricingSchemaString="Fixed Price" priceDisplaySchema="" priceDisplaySchemaString="">
+        <Description>
+          <Text><![CDATA[]]></Text>
+        </Description>
+      </Pricing>
+      <Costing>
+        <Costs/>
+      </Costing>
+      <ServiceLevel/>
+      <Bundling canBeBundled="true" isABundle="false">
+        <ServiceContainsServices/>
+        <ServiceIsContainedByServices/>
+      </Bundling>
+      <ServicePreRequisites/>
+      <ServiceAccessories/>
+      <Manufacturer name="" partNumber=""/>
+      <Supplier name="" type="" partNumber=""/>
+      <Plans>
+        <Plan>
+          <PlanAttributes type="delivery" name="PrimaryDeliveryPlan" subtaskFlow="sequential" maxDepth="1" hoursPerDay="8.0" isAutomaticStart="true">
+            <PlanSubject><![CDATA[<s ID="11"><p>#Name#</p></s>]]></PlanSubject>
+            <PlanMonitorTask>
+              <PlanMonitorWorkflowRoles>
+                <PlanMonitorWorkflowRole assignmentMethod="none" expression=""/>
+              </PlanMonitorWorkflowRoles>
+              <Notifications>
+                <Notification eventType="plantaskcanceled" emailTemplate=""/>
+              </Notifications>
+            </PlanMonitorTask>
+          </PlanAttributes>
+          <Tasks/>
+          <Escalations/>
+        </Plan>
+      </Plans>
+      <DictionaryFormAccessPolicies/>
+      <ServiceForms>
+        <ServiceForm name="Tenant-Information Form" displayOrder="1" guid=""/>
+      </ServiceForms>
+      <RelatedEntities>
+        <Forms>
+          <Form name="Tenant-Information Form" guid=""/>
+        </Forms>
+        <ServiceGroups>
+          <ServiceGroupName name="0 Service Icons" guid="F3306964-28BC-4CF0-A88C-E490A34B7E55"/>
+        </ServiceGroups>
+        <Categories>
+          <Category name="Welcome to your ITaaS storefront"/>
+        </Categories>
+        <EmailTemplates>
+          <EmailTemplate name="&lt;s ID=&quot;3469&quot;/&gt;" guid=""/>
+          <EmailTemplate name="&lt;s ID=&quot;6321&quot;/&gt;" guid=""/>
+          <EmailTemplate name="&lt;s ID=&quot;6322&quot;/&gt;" guid=""/>
+          <EmailTemplate name="&lt;s ID=&quot;3522&quot;/&gt;" guid=""/>
+        </EmailTemplates>
+        <Objectives/>
+        <ServiceDefinitions/>
+        <Keywords/>
+        <Persons/>
+        <OrganizationalUnits/>
+        <Queues/>
+        <Agents/>
+      </RelatedEntities>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="service_change_rights" displayName="service_change_rights">
+            <Objects/>
+          </Operation>
+          <Operation name="service_change_delivery" displayName="service_change_delivery">
+            <Objects/>
+          </Operation>
+          <Operation name="service_change_forms" displayName="service_change_forms">
+            <Objects/>
+          </Operation>
+          <Operation name="service_change_presentation" displayName="service_change_presentation">
+            <Objects/>
+          </Operation>
+          <Operation name="service_order_service" displayName="service_order_service">
+            <Objects/>
+          </Operation>
+          <Operation name="service_read_service" displayName="service_read_service">
+            <Objects/>
+          </Operation>
+          <Operation name="service_write_service" displayName="service_write_service">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+      <Images/>
+      <ImageURL><![CDATA[]]></ImageURL>
+      <BaseTemplateID><![CDATA[0]]></BaseTemplateID>
+      <OverwriteDefinition><![CDATA[0]]></OverwriteDefinition>
+    </ServiceDefinition>
+  </ServiceDefinitions>
+  <Extension/>
+  <Forms>
+    <Form formGroupName="Reserved" name="Tenant-Information Form" logicName="tenant-information-form">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description><![CDATA[Tenant Information Form for when Tenant Management is enabled]]></Description>
+      <FormDictionaries>
+        <FormDictionary defaultCaption="Select team" dictionaryName="XX_Tenant_Information_XX" displayOrder="1" oneInstance="false" showOptions="3" useDefaultCaption="true" autoDataRetrieval="false" displayAsGrid="false" gridEditable="false" maxRows="0" displayRows="0" overrideDictionaryKeyValues="false">
+          <FormDictionaryAccessPolicies>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ordering" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="rw" resourceMoment="ordering" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ouauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ouauthorizations" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="oureviews" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="oureviews" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="stauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="stauthorizations" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="streviews" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="streviews" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="financialauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="financialauthorizations" subjectRoleName="&lt;s ID=&quot;9984&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="pricing" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="pricing" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+          </FormDictionaryAccessPolicies>
+          <ServiceDictionaryAccessPolicies/>
+          <FormElements>
+            <FormElement columns="80" dataElementName="XX_XX_TMEnabled_XX_XX" displayOrder="2" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="512" revisionNumber="21" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[XX_XX_TMEnabled_XX_XX]]></FormElementPromptName>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="80" controlCaption="" dataElementName="XX_XX_TeamName_XX_XX" displayOrder="5" distribution="vertical" enableControl="false" inputType="text" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="100" revisionNumber="21" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[TeamName]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementInstructionalText><![CDATA[Please select the tenant to which you want to order this service for.]]></FormElementInstructionalText>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+          </FormElements>
+        </FormDictionary>
+      </FormDictionaries>
+      <Rules>
+        <Rule displayOrder="0" name="PopulateTMEnabled" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[Populate TMEnabled]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="preload" inputType="url" listOrder="0" triggerRank="1"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[Select Min(TMEnabled) as TMEnabled from ((Select ActivateTM as TMEnabled from AcAccountConfiguration Where PrimaryID = 
+(Select AccountConfigurationID From AcTenant where TenantID = 'ProviderBusinessTenant'))
+ UNION (Select TenantRelevant as TMEnabled from DefService Where ServiceID = #ServiceForm.ServiceId#)) as TempTable
+]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions/>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="XX_XX_TMEnabled_XX_XX" dictionaryName="XX_Tenant_Information_XX" fieldName="TMEnabled" fieldLabel="TMEnabled" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="ShowNameField" type="cr">
+          <Description><![CDATA[Rule to show tenant name field and make it mandatory based on if TM is activated]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onload" inputType="url" listOrder="0" triggerRank="-1"/>
+          </TriggerEvents>
+          <RuleConditions>
+            <Condition conditionType="dictionary_field" listOrder="0" operation="equals">
+              <Left object="Data" operand="XX_Tenant_Information_XX.XX_XX_TMEnabled_XX_XX">
+                <DictionaryField name="XX_XX_TMEnabled_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Left>
+              <Right operand="1"/>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="0" type="show" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="XX_XX_TeamName_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="1" type="mandatory" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="XX_XX_TeamName_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+        <Rule displayOrder="0" name="HideNameField" type="cr">
+          <Description><![CDATA[Rule to hide tenant name field and make it optional based on if TM is not activated]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onload" inputType="url" listOrder="0" triggerRank="-1"/>
+          </TriggerEvents>
+          <RuleConditions>
+            <Condition conditionType="dictionary_field" listOrder="0" operation="equals">
+              <Left object="Data" operand="XX_Tenant_Information_XX.XX_XX_TMEnabled_XX_XX">
+                <DictionaryField name="XX_XX_TMEnabled_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Left>
+              <Right operand="0"/>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="1" type="optional" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="XX_XX_TeamName_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="2" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Dictionary">
+                <Dictionary name="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+      </Rules>
+      <FormScriptFunctionBindings/>
+      <RelatedEntities/>
+    </Form>
+  </Forms>
+  <FormGroups>
+    <FormGroup name="Reserved" guid="6CD19C0A-1FB1-4AEC-8F0F-C2CF0250DEF3">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="reusable_forms_write" displayName="reusable_forms_write">
+            <Objects/>
+          </Operation>
+          <Operation name="reusable_forms_read" displayName="reusable_forms_read">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </FormGroup>
+  </FormGroups>
+  <DictionaryGroups>
+    <DictionaryGroup name="&lt;s ID=&quot;10819&quot;/&gt;" guid="E15F635A-2304-45C6-952D-236A79121249">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+    </DictionaryGroup>
+  </DictionaryGroups>
+  <ServiceGroups>
+    <ServiceGroup name="0 Service Icons" serviceTeam="Site Administration" authorizations="site" guid="F3306964-28BC-4CF0-A88C-E490A34B7E55">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description>
+        <Text><![CDATA[This is a group of royalty-free vector icons in SVG format, which Cisco provides with the Prime Service Catalog product.  You can use these icons in designing your services.]]></Text>
+      </Description>
+      <Authorization>
+        <ServiceGroupReview>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2000.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;6322&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupReview>
+        <ServiceGroupAuthorization>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2300.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;3522&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupAuthorization>
+      </Authorization>
+      <PositionNames/>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="service_group_order_services" displayName="service_group_order_services">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="0 Service Icons" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_read" displayName="service_group_read">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="0 Service Icons" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_write" displayName="service_group_write">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="0 Service Icons" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_assign_rights" displayName="service_group_assign_rights">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="0 Service Icons" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_design_services" displayName="service_group_design_services">
+            <Objects/>
+          </Operation>
+          <Operation name="service_group_create_services" displayName="service_group_create_services">
+            <Objects/>
+          </Operation>
+          <Operation name="service_group_write_services" displayName="service_group_write_services">
+            <Objects/>
+          </Operation>
+          <Operation name="service_group_access_permitted_services" displayName="service_group_access_permitted_services">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </ServiceGroup>
+  </ServiceGroups>
+  <Dictionaries>
+    <Dictionary name="XX_Tenant_Information_XX" dictionaryGroupName="&lt;s ID=&quot;10819&quot;/&gt;" dictionaryTemplateType="1" isActive="true" isExternal="false" isReportable="false" isServicePrivate="false" contactPerson="" status="0" serviceItemFamily="" guid="11172587-D749-49A5-8779-F64C7C321966" logicName="tenant-information">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description>
+        <Text><![CDATA[Tenant Information Section]]></Text>
+      </Description>
+      <CategoryTypeName displayName="None" name="None"/>
+      <DBANotes><![CDATA[]]></DBANotes>
+      <DefaultCaption><![CDATA[Select team]]></DefaultCaption>
+      <RevisionNotes><![CDATA[]]></RevisionNotes>
+      <ExternalDictionaryInfo isQuery="false">
+        <SQLStatement><![CDATA[]]></SQLStatement>
+      </ExternalDictionaryInfo>
+      <DataElements>
+        <DataElement name="XX_XX_TMEnabled_XX_XX" displayOrder="1" maxLength="512" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="XX_XX_TeamName_XX_XX" displayOrder="2" maxLength="100" dataType="Tenant" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+      </DataElements>
+      <RelatedEntities/>
+    </Dictionary>
+  </Dictionaries>
+  <ScriptLibraries/>
+  <ScriptFunctions/>
+  <Categories>
+    <Category name="Welcome to your ITaaS storefront" isRoot="false" catalogType="Consumer Service" displayOrder="0" showTitles="false" showCaseCategoryLocation="top-left" uiStyle="0" maxQuantity="0">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Presentation>
+        <PresentationElement name="PSC_ShoppingCart.png" serverName="PSC_ShoppingCart.png" size="21034" contentStorage="database" contentType="image/png" uploadDate="2020-12-15 05:42:44.0" guid="2D48E359-AF87-42EE-AA48-FA7F2E18ABD6">
+          <Content><![CDATA[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
+gg==]]></Content>
+        </PresentationElement>
+        <Description>
+          <Icon documentId="76" name="PSC_ShoppingCart.png"/>
+          <Text><![CDATA[Cisco Prime Service Catalog is the ITaaS catalog providing self-service for Private and Hybrid Cloud as well as workplace IT services.  It provides out-of-box integration for Cisco UCS Director.]]></Text>
+        </Description>
+        <SectionOne isEnabled="false">
+          <Text><![CDATA[]]></Text>
+        </SectionOne>
+        <SectionTwo isEnabled="false">
+          <Text><![CDATA[]]></Text>
+        </SectionTwo>
+        <SectionThree isEnabled="false">
+          <Text><![CDATA[]]></Text>
+        </SectionThree>
+      </Presentation>
+      <ContainingCategories>
+        <CategoryName guid="" name="&lt;b&gt;&lt;s ID=&quot;7960&quot;/&gt;&lt;/b&gt;"/>
+      </ContainingCategories>
+      <ContainedCategories/>
+      <ContainedServices>
+        <BasicServiceDefinition name="1-tier Application Container SVG" displayOrder="1" guid="3BC15708-CB43-4D24-8BBB-49115A7705DA"/>
+        <BasicServiceDefinition name="2-tier Application Container SVG" displayOrder="2" guid="F46C5917-0737-464F-AF71-D5711B18D3E0"/>
+        <BasicServiceDefinition name="3-tier Application Container SVG" displayOrder="3" guid="95714BFF-CB6B-4A8D-8697-456771CDB68B"/>
+        <BasicServiceDefinition name="3-tier Java Application SVG" displayOrder="4" guid="C45D6C1D-0AA0-4940-AF13-CA49A8B9A712"/>
+        <BasicServiceDefinition name="3-tier Linux SVG" displayOrder="5" guid="33400F90-A987-4AF8-BC9B-CF9545200ADB"/>
+        <BasicServiceDefinition name="3-tier Production Application SVG" displayOrder="6" guid="58DBE1C1-D038-4BC3-BBA8-1B03010D3BD2"/>
+        <BasicServiceDefinition name="Activity SVG" displayOrder="7" guid="E326E6C2-F502-4A77-9210-B77E3F927CC4"/>
+        <BasicServiceDefinition name="Application Container SVG" displayOrder="8" guid="B027B702-8DFF-4AF1-9ACE-C7F9160491EE"/>
+        <BasicServiceDefinition name="Application Platform Black SVG" displayOrder="9" guid="437A7E6E-EE77-44E1-B07C-E3BD257677DC"/>
+        <BasicServiceDefinition name="Catalogs SVG" displayOrder="10" guid="BBC9C98F-9364-4262-8753-EB3D2577E102"/>
+        <BasicServiceDefinition name="Groups SVG" displayOrder="11" guid="44BB7C2D-FFA7-480D-9793-DA51AD7A195C"/>
+        <BasicServiceDefinition name="Images SVG" displayOrder="12" guid="C9022B00-1959-416E-878D-555A43BE4195"/>
+        <BasicServiceDefinition name="Linux VM SVG" displayOrder="13" guid="1EEC8777-18C0-434E-9D79-1113E35C434D"/>
+        <BasicServiceDefinition name="Users SVG" displayOrder="14" guid="A362D8B2-5B50-4475-8368-22F7C67ADC05"/>
+        <BasicServiceDefinition name="Virtual Data Center SVG" displayOrder="15" guid="F37F9D11-F5C8-441C-921E-0E3133181512"/>
+        <BasicServiceDefinition name="Virtual Machine SVG" displayOrder="16" guid="325BCB6B-FABE-4EAB-9507-1B6F14AD6401"/>
+        <BasicServiceDefinition name="Windows VM SVG" displayOrder="17" guid="6B0CB031-7782-4B14-9D06-05531D5A3FBE"/>
+      </ContainedServices>
+      <Images/>
+      <CategoryExtensions/>
+      <ImageURL><![CDATA[]]></ImageURL>
+    </Category>
+  </Categories>
+</rex></DeploymentXML>
+  <HasImage>false</HasImage>
+  <CreatorObjectId>0</CreatorObjectId>
+  <CreatorObjectInstanceId>0</CreatorObjectInstanceId>
+  <DocSize>0</DocSize>
+  <TenantId>0</TenantId>
+  <UploadedBy>0</UploadedBy>
+</NSDeploymentPackage>
