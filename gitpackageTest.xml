@@ -1,0 +1,2717 @@
+<NSDeploymentPackage rcVersion="13.2.1.0001.060321">
+  <Name catalogVersion="" vendorName="">gitpackageTest</Name>
+  <TypeID>1</TypeID>
+  <DeploymentOptions></DeploymentOptions>
+  <Guid>C22F8BC3-D358-4A05-BD9E-410781E0341B</Guid>
+  <Description>gitpackageTest</Description>
+  <EntityXML>Entity XML</EntityXML>
+  <DeploymentXML><rex>
+  <Header requestAction="put">
+    <Params>
+      <DatasourceOverride>--LOCALDATASOURCE--</DatasourceOverride>
+      <OptionSetNameDefault>catalogDeployerDefault</OptionSetNameDefault>
+      <ServiceDefinitionPermitMissingAssociatedService>false</ServiceDefinitionPermitMissingAssociatedService>
+    </Params>
+  </Header>
+  <ServiceDefinitions>
+    <ServiceDefinition name="Add vNIC" serviceGroupName="UCSD_Operations" catalogName="" type="notspecified" isActive="true" isReportable="false" isEntitlement="false" isOrderable="true" computePrice="false" authorizations="site" canStartLater="false" dateQuality="tbd" guid="CD50B968-A58F-4281-8DDD-0629E4FDF194" orderingMode="Add review disabled" paginationViewMode="Classic View" hideInServiceCatalog="true" hideInMyOrders="false" isTemplate="false" showOrderSummary="false" maxQuantity="0" isBaseService="false" templateType="null" tenantRelevant="false">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Duration value="0.0" units="hours" isDefinedDuration="false"/>
+      <Billing rate="0.0" type="none"/>
+      <Expensing expenseCode=""/>
+      <Authorization>
+        <ServiceGroupReview>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2000.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;6322&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupReview>
+        <ServiceGroupAuthorization>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2300.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;3522&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupAuthorization>
+      </Authorization>
+      <Presentation>
+        <Description>
+          <Icon documentId="0"/>
+        </Description>
+        <SectionOne isEnabled="false"/>
+        <SectionTwo isEnabled="false"/>
+        <SectionThree isEnabled="false"/>
+      </Presentation>
+      <PositionNames>
+        <PositionName name="Author" type="Service" serviceDefinitionName="Add vNIC" serviceDefinitionGuid="CD50B968-A58F-4281-8DDD-0629E4FDF194" objectType="Person" instanceName="admin"/>
+      </PositionNames>
+      <Categories>
+        <ConsumerServicesCategories/>
+        <ServicePortfoliosCategories/>
+      </Categories>
+      <AssociatedKeywords/>
+      <AssociatedObjectives/>
+      <Pricing price="0.0" pricingSchema="fixedprice" pricingSchemaString="Fixed Price" priceDisplaySchema="" priceDisplaySchemaString="">
+        <Description>
+          <Text><![CDATA[]]></Text>
+        </Description>
+      </Pricing>
+      <Costing>
+        <Costs/>
+      </Costing>
+      <ServiceLevel/>
+      <Bundling canBeBundled="true" isABundle="false">
+        <ServiceContainsServices/>
+        <ServiceIsContainedByServices/>
+      </Bundling>
+      <ServicePreRequisites/>
+      <ServiceAccessories/>
+      <Manufacturer name="" partNumber=""/>
+      <Supplier name="" type="" partNumber=""/>
+      <Plans>
+        <Plan>
+          <PlanAttributes type="delivery" name="PrimaryDeliveryPlan" subtaskFlow="sequential" maxDepth="1" hoursPerDay="8.0" isAutomaticStart="true">
+            <PlanSubject><![CDATA[<s ID="11"><p>#Name#</p></s>]]></PlanSubject>
+            <PlanMonitorTask>
+              <PlanMonitorWorkflowRoles>
+                <PlanMonitorWorkflowRole assignmentMethod="none" expression=""/>
+              </PlanMonitorWorkflowRoles>
+              <Notifications>
+                <Notification eventType="plantaskcanceled" emailTemplate=""/>
+              </Notifications>
+            </PlanMonitorTask>
+          </PlanAttributes>
+          <Tasks>
+            <DeliveryTask name="SI Update Status Task" displayName="SI Update Status Task" type="simpletask" duration="10.0" effort="10.0" overbookTime="true" displayEffortSubPage="true" priority="2" escalationMaximumTier="-1" hasChecklist="false" isParent="false" isFirstChild="false" isLastChild="false" recomputeExpressions="false">
+              <DeliveryWorkflowRules parentTask="" parentTaskDisplayOrder="0" subtaskFlow="sequential" displayOrder="10000" childLevel="1" allowCancellation="true">
+                <ConditionalStart isEvaluateEarly="true" condition=""/>
+                <ScheduleStart isScheduledStart="false" schedule=""/>
+                <DirectoryTaskCondition condition=""/>
+                <QueueServiceRequest>
+                  <Configuration><![CDATA[]]></Configuration>
+                </QueueServiceRequest>
+              </DeliveryWorkflowRules>
+              <DeliveryWorkflowRoles>
+                <Performer processRole="" assignmentMethod="none" outsourceSupplier="" agent="-1" isAgentFulfillment="false" isOutsourceFulfillment="false"/>
+                <Owner processRole="" assignmentMethod="from a position" expression="Organizational Unit.&lt;s ID=&quot;2090&quot;/&gt;">
+                  <PositionName name="&lt;s ID=&quot;2090&quot;/&gt;" type="OrganizationalUnit"/>
+                </Owner>
+              </DeliveryWorkflowRoles>
+              <Instructions>
+                <Instruction><![CDATA[]]></Instruction>
+                <InstructionURL><![CDATA[]]></InstructionURL>
+                <InstructionURLDescription><![CDATA[]]></InstructionURLDescription>
+              </Instructions>
+              <TaskSITParameters>
+                <TaskSITParameter dictionaryName="UCSD_VM_NIC_Operation_Action">
+                  <OperationParameter><![CDATA[operation]]></OperationParameter>
+                  <OperationValue><![CDATA[Add vNIC]]></OperationValue>
+                  <DictionaryParameter><![CDATA[dictionaryid]]></DictionaryParameter>
+                  <DictionaryValue><![CDATA[29]]></DictionaryValue>
+                  <ActionParameter><![CDATA[TakeAction]]></ActionParameter>
+                  <ActionValue><![CDATA[2]]></ActionValue>
+                  <UpdateStatusOnlyParameter><![CDATA[updateStatusOnly]]></UpdateStatusOnlyParameter>
+                  <IsUpdateStatusOnly><![CDATA[true]]></IsUpdateStatusOnly>
+                </TaskSITParameter>
+              </TaskSITParameters>
+              <Notifications/>
+            </DeliveryTask>
+            <DeliveryTask name="UCSD Add vNIC Task" displayName="UCSD Add vNIC Task" type="simpletask" duration="10.0" effort="10.0" overbookTime="true" displayEffortSubPage="true" priority="2" escalationMaximumTier="-1" hasChecklist="false" isParent="false" isFirstChild="false" isLastChild="false" recomputeExpressions="false">
+              <DeliveryWorkflowRules parentTask="" parentTaskDisplayOrder="0" subtaskFlow="sequential" displayOrder="20000" childLevel="1" allowCancellation="true">
+                <ConditionalStart isEvaluateEarly="true" condition=""/>
+                <ScheduleStart isScheduledStart="false" schedule=""/>
+                <DirectoryTaskCondition condition=""/>
+                <QueueServiceRequest>
+                  <Configuration><![CDATA[]]></Configuration>
+                </QueueServiceRequest>
+              </DeliveryWorkflowRules>
+              <DeliveryWorkflowRoles>
+                <Performer processRole="" assignmentMethod="none" outsourceSupplier="" agent="UCSDAgent" isAgentFulfillment="true" isOutsourceFulfillment="false"/>
+                <Owner processRole="" assignmentMethod="from a position" expression="Organizational Unit.&lt;s ID=&quot;2090&quot;/&gt;">
+                  <PositionName name="&lt;s ID=&quot;2090&quot;/&gt;" type="OrganizationalUnit"/>
+                </Owner>
+              </DeliveryWorkflowRoles>
+              <Instructions>
+                <Instruction><![CDATA[]]></Instruction>
+                <InstructionURL><![CDATA[]]></InstructionURL>
+                <InstructionURLDescription><![CDATA[]]></InstructionURLDescription>
+              </Instructions>
+              <Notifications/>
+              <TaskAgentParameters>
+                <TaskAgentParameter name="CommunicationMethod" inboundUsageId="3" outboundUsageId="1">
+                  <OutDataExpression><![CDATA[REST]]></OutDataExpression>
+                  <InDataSpec><![CDATA[]]></InDataSpec>
+                  <OutReponseParam><![CDATA[]]></OutReponseParam>
+                </TaskAgentParameter>
+                <TaskAgentParameter name="Dictionary" inboundUsageId="3" outboundUsageId="1">
+                  <OutDataExpression><![CDATA[UCSD_VM_NIC_Operation_Action]]></OutDataExpression>
+                  <InDataSpec><![CDATA[]]></InDataSpec>
+                  <OutReponseParam><![CDATA[]]></OutReponseParam>
+                </TaskAgentParameter>
+                <TaskAgentParameter name="OperationName" inboundUsageId="3" outboundUsageId="1">
+                  <OutDataExpression><![CDATA[addVNIC]]></OutDataExpression>
+                  <InDataSpec><![CDATA[]]></InDataSpec>
+                  <OutReponseParam><![CDATA[]]></OutReponseParam>
+                </TaskAgentParameter>
+                <TaskAgentParameter name="OptionalDictionay" inboundUsageId="3" outboundUsageId="1">
+                  <OutDataExpression><![CDATA[]]></OutDataExpression>
+                  <InDataSpec><![CDATA[]]></InDataSpec>
+                  <OutReponseParam><![CDATA[]]></OutReponseParam>
+                </TaskAgentParameter>
+              </TaskAgentParameters>
+            </DeliveryTask>
+            <DeliveryTask name="SI Operation Complete Task" displayName="SI Operation Complete Task" type="simpletask" duration="10.0" effort="10.0" overbookTime="true" displayEffortSubPage="true" priority="2" escalationMaximumTier="-1" hasChecklist="false" isParent="false" isFirstChild="false" isLastChild="true" recomputeExpressions="false">
+              <DeliveryWorkflowRules parentTask="" parentTaskDisplayOrder="0" subtaskFlow="sequential" displayOrder="30000" childLevel="1" allowCancellation="true">
+                <ConditionalStart isEvaluateEarly="true" condition=""/>
+                <ScheduleStart isScheduledStart="false" schedule=""/>
+                <DirectoryTaskCondition condition=""/>
+                <QueueServiceRequest>
+                  <Configuration><![CDATA[]]></Configuration>
+                </QueueServiceRequest>
+              </DeliveryWorkflowRules>
+              <DeliveryWorkflowRoles>
+                <Performer processRole="" assignmentMethod="none" outsourceSupplier="" agent="-5" isAgentFulfillment="false" isOutsourceFulfillment="false"/>
+                <Owner processRole="" assignmentMethod="from a position" expression="Organizational Unit.&lt;s ID=&quot;2090&quot;/&gt;">
+                  <PositionName name="&lt;s ID=&quot;2090&quot;/&gt;" type="OrganizationalUnit"/>
+                </Owner>
+              </DeliveryWorkflowRoles>
+              <Instructions>
+                <Instruction><![CDATA[]]></Instruction>
+                <InstructionURL><![CDATA[]]></InstructionURL>
+                <InstructionURLDescription><![CDATA[]]></InstructionURLDescription>
+              </Instructions>
+              <TaskSyncParameters>
+                <TaskSyncParameter pluginClass="com.celosis.event.SyncTaskUCSDContainerPlugin">
+                  <param>
+                    <SyncTask__param1><![CDATA[UCSD_VM_NIC_Operation_Action.VMId]]></SyncTask__param1>
+                    <SyncTask__param2><![CDATA[addVNIC]]></SyncTask__param2>
+                    <SyncTask__param3><![CDATA[UCSD_VM_NIC_Operation_Action.Status]]></SyncTask__param3>
+                    <SyncTask__param4><![CDATA[UCSD_VM_NIC_Operation_Action.ShortName]]></SyncTask__param4>
+                    <SyncTask__param5><![CDATA[]]></SyncTask__param5>
+                  </param>
+                  <ActionParameter><![CDATA[TakeAction]]></ActionParameter>
+                  <ActionValue><![CDATA[2]]></ActionValue>
+                </TaskSyncParameter>
+              </TaskSyncParameters>
+              <Notifications/>
+            </DeliveryTask>
+          </Tasks>
+          <Escalations/>
+        </Plan>
+      </Plans>
+      <DictionaryFormAccessPolicies/>
+      <ServiceForms>
+        <ServiceForm name="Tenant-Information Form" displayOrder="1" guid=""/>
+        <ServiceForm name="UCSD Add vNIC" displayOrder="2" guid=""/>
+      </ServiceForms>
+      <RelatedEntities>
+        <Forms>
+          <Form name="Tenant-Information Form" guid=""/>
+          <Form name="UCSD Add vNIC" guid=""/>
+        </Forms>
+        <ServiceGroups>
+          <ServiceGroupName name="UCSD_Operations" guid="5DC24EE2-17F5-41ED-BE92-0E90E6E3AF95"/>
+        </ServiceGroups>
+        <Categories/>
+        <EmailTemplates>
+          <EmailTemplate name="&lt;s ID=&quot;3469&quot;/&gt;" guid=""/>
+          <EmailTemplate name="&lt;s ID=&quot;6321&quot;/&gt;" guid=""/>
+          <EmailTemplate name="&lt;s ID=&quot;6322&quot;/&gt;" guid=""/>
+          <EmailTemplate name="&lt;s ID=&quot;3522&quot;/&gt;" guid=""/>
+        </EmailTemplates>
+        <Objectives/>
+        <ServiceDefinitions/>
+        <Keywords/>
+        <Persons/>
+        <OrganizationalUnits/>
+        <Queues/>
+        <Agents>
+          <AgentName name="UCSDAgent"/>
+        </Agents>
+      </RelatedEntities>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="service_change_rights" displayName="service_change_rights">
+            <Objects/>
+          </Operation>
+          <Operation name="service_change_delivery" displayName="service_change_delivery">
+            <Objects/>
+          </Operation>
+          <Operation name="service_change_forms" displayName="service_change_forms">
+            <Objects/>
+          </Operation>
+          <Operation name="service_change_presentation" displayName="service_change_presentation">
+            <Objects/>
+          </Operation>
+          <Operation name="service_order_service" displayName="service_order_service">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="Tenant Server Administrator" type="roletypeuserdefined" guid=""/>
+                  <RoleName name="UCSD End User" type="roletypeuserdefined" guid=""/>
+                  <RoleName name="UCSD Sys Admin" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_read_service" displayName="service_read_service">
+            <Objects/>
+          </Operation>
+          <Operation name="service_write_service" displayName="service_write_service">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+      <Images/>
+      <ImageURL><![CDATA[]]></ImageURL>
+      <BaseTemplateID><![CDATA[0]]></BaseTemplateID>
+      <OverwriteDefinition><![CDATA[0]]></OverwriteDefinition>
+    </ServiceDefinition>
+  </ServiceDefinitions>
+  <Forms>
+    <Form formGroupName="Reserved" name="Tenant-Information Form" logicName="tenant-information-form">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description><![CDATA[Tenant Information Form for when Tenant Management is enabled]]></Description>
+      <FormDictionaries>
+        <FormDictionary defaultCaption="Select team" dictionaryName="XX_Tenant_Information_XX" displayOrder="1" oneInstance="false" showOptions="3" useDefaultCaption="true" autoDataRetrieval="false" displayAsGrid="false" gridEditable="false" maxRows="0" displayRows="0" overrideDictionaryKeyValues="false">
+          <FormDictionaryAccessPolicies>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ordering" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="rw" resourceMoment="ordering" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ouauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ouauthorizations" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="oureviews" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="oureviews" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="stauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="stauthorizations" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="streviews" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="streviews" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="financialauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="financialauthorizations" subjectRoleName="&lt;s ID=&quot;9984&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="pricing" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="pricing" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+          </FormDictionaryAccessPolicies>
+          <ServiceDictionaryAccessPolicies/>
+          <FormElements>
+            <FormElement columns="80" dataElementName="XX_XX_TMEnabled_XX_XX" displayOrder="2" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="512" revisionNumber="21" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[XX_XX_TMEnabled_XX_XX]]></FormElementPromptName>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="80" controlCaption="" dataElementName="XX_XX_TeamName_XX_XX" displayOrder="5" distribution="vertical" enableControl="false" inputType="text" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="100" revisionNumber="21" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[TeamName]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementInstructionalText><![CDATA[Please select the tenant to which you want to order this service for.]]></FormElementInstructionalText>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+          </FormElements>
+        </FormDictionary>
+      </FormDictionaries>
+      <Rules>
+        <Rule displayOrder="0" name="PopulateTMEnabled" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[Populate TMEnabled]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="preload" inputType="url" listOrder="0" triggerRank="1"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[Select Min(TMEnabled) as TMEnabled from ((Select ActivateTM as TMEnabled from AcAccountConfiguration Where PrimaryID = 
+(Select AccountConfigurationID From AcTenant where TenantID = 'ProviderBusinessTenant'))
+ UNION (Select TenantRelevant as TMEnabled from DefService Where ServiceID = #ServiceForm.ServiceId#)) as TempTable
+]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions/>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="XX_XX_TMEnabled_XX_XX" dictionaryName="XX_Tenant_Information_XX" fieldName="TMEnabled" fieldLabel="TMEnabled" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="ShowNameField" type="cr">
+          <Description><![CDATA[Rule to show tenant name field and make it mandatory based on if TM is activated]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onload" inputType="url" listOrder="0" triggerRank="-1"/>
+          </TriggerEvents>
+          <RuleConditions>
+            <Condition conditionType="dictionary_field" listOrder="0" operation="equals">
+              <Left object="Data" operand="XX_Tenant_Information_XX.XX_XX_TMEnabled_XX_XX">
+                <DictionaryField name="XX_XX_TMEnabled_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Left>
+              <Right operand="1"/>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="0" type="show" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="XX_XX_TeamName_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="1" type="mandatory" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="XX_XX_TeamName_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+        <Rule displayOrder="0" name="HideNameField" type="cr">
+          <Description><![CDATA[Rule to hide tenant name field and make it optional based on if TM is not activated]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onload" inputType="url" listOrder="0" triggerRank="-1"/>
+          </TriggerEvents>
+          <RuleConditions>
+            <Condition conditionType="dictionary_field" listOrder="0" operation="equals">
+              <Left object="Data" operand="XX_Tenant_Information_XX.XX_XX_TMEnabled_XX_XX">
+                <DictionaryField name="XX_XX_TMEnabled_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Left>
+              <Right operand="0"/>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="1" type="optional" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="XX_XX_TeamName_XX_XX" dictionaryName="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="2" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Dictionary">
+                <Dictionary name="XX_Tenant_Information_XX"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+      </Rules>
+      <FormScriptFunctionBindings/>
+      <RelatedEntities/>
+    </Form>
+    <Form formGroupName="UCSD_Operations" name="UCSD Add vNIC" logicName="">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description><![CDATA[]]></Description>
+      <FormDictionaries>
+        <FormDictionary caption="UCSD VM Operation" defaultCaption="UCSD VM Operation" dictionaryName="UCSD_VM_NIC_Operation_Action" displayOrder="1" oneInstance="false" showOptions="3" useDefaultCaption="false" autoDataRetrieval="false" displayAsGrid="false" gridEditable="false" maxRows="0" displayRows="0" overrideDictionaryKeyValues="false">
+          <FormDictionaryAccessPolicies>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ordering" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="rw" resourceMoment="ordering" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ouauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="ouauthorizations" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="oureviews" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="oureviews" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="stauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="stauthorizations" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="streviews" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="streviews" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="financialauthorizations" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="financialauthorizations" subjectRoleName="&lt;s ID=&quot;9984&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9982&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="servicedelivery" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="pricing" subjectRoleName="&lt;s ID=&quot;9981&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+            <FormDictionaryAccessPolicy action="ro" resourceMoment="pricing" subjectRoleName="&lt;s ID=&quot;9983&quot;/&gt;" subjectRoleType="roletypeinternal" subjectType="role"/>
+          </FormDictionaryAccessPolicies>
+          <ServiceDictionaryAccessPolicies/>
+          <FormElements>
+            <FormElement columns="0" controlCaption="" dataElementName="Name" displayOrder="1" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="true" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="512" revisionNumber="1" rows="0" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[Name]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="9" dataElementName="VMId" displayOrder="2" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="9" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="true" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[VMId]]></FormElementPromptName>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="80" dataElementName="Status" displayOrder="3" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="128" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="true" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[Status]]></FormElementPromptName>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="80" controlCaption="" dataElementName="DisplayName" displayOrder="4" distribution="vertical" enableControl="false" inputType="readonly" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="true" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="512" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="true" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[Name]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementInstructionalText><![CDATA[]]></FormElementInstructionalText>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="80" dataElementName="ErrorCode" displayOrder="5" distribution="vertical" enableControl="false" inputType="text" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="128" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[ErrorCode]]></FormElementPromptName>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="80" dataElementName="ErrorDescription" displayOrder="6" distribution="vertical" enableControl="false" inputType="textarea" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="512" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[ErrorDescription]]></FormElementPromptName>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="80" dataElementName="vNIC" displayOrder="7" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="128" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="true" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[vNIC]]></FormElementPromptName>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="80" controlCaption="" dataElementName="SelectedVMName" displayOrder="8" distribution="vertical" enableControl="false" inputType="select" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="true" isSelectMultiple="false" isValidated="true" maxLength="128" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[SelectedVMName]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementInstructionalText><![CDATA[]]></FormElementInstructionalText>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal">
+                <MVInternalOptionList><![CDATA[]]></MVInternalOptionList>
+                <MVPreselectedValues><![CDATA[]]></MVPreselectedValues>
+                <MVPreselectedValuesSQLStatement><![CDATA[]]></MVPreselectedValuesSQLStatement>
+                <MVSQLStatement><![CDATA[]]></MVSQLStatement>
+                <MVOptions>
+                  <DataRecordValue><![CDATA[]]></DataRecordValue>
+                </MVOptions>
+              </FormElementMultivalue>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="50" dataElementName="ShortName" displayOrder="9" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="50" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="true" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[ShortName]]></FormElementPromptName>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="0" controlCaption="" dataElementName="nic1_portGroupIdentity" displayOrder="10" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="512" revisionNumber="1" rows="0" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[Port Group Identity]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="0" controlCaption="" dataElementName="ContainerType" displayOrder="13" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="128" revisionNumber="1" rows="0" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[ContainerType]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="0" controlCaption="" dataElementName="VMTemplateName" displayOrder="14" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="128" revisionNumber="1" rows="0" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[VMTemplateName]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="50" controlCaption="" dataElementName="LAN" displayOrder="18" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="50" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="true" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[LAN]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementInstructionalText><![CDATA[]]></FormElementInstructionalText>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="0" controlCaption="" dataElementName="ContainerPimaryID" displayOrder="19" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="25" revisionNumber="1" rows="0" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[ContainerPimaryID]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="0" controlCaption="" dataElementName="ContainerTypeID" displayOrder="20" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="25" revisionNumber="1" rows="0" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[ContainerTypeID]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="25" dataElementName="ContainerID" displayOrder="11" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="25" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="true" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[ContainerID]]></FormElementPromptName>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="50" dataElementName="VMNetworkName" displayOrder="12" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="50" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="true" showInGrid="false">
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[VMEpgName]]></FormElementPromptName>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="50" controlCaption="" dataElementName="UserName" displayOrder="16" distribution="vertical" enableControl="false" inputType="text" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="50" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[UserName]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementInstructionalText><![CDATA[]]></FormElementInstructionalText>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="50" controlCaption="" dataElementName="Password" displayOrder="17" distribution="vertical" enableControl="false" inputType="password" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="50" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[Password]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementInstructionalText><![CDATA[]]></FormElementInstructionalText>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="50" controlCaption="" dataElementName="NetworkName" displayOrder="15" distribution="vertical" enableControl="false" inputType="select" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="true" isSelectMultiple="false" isValidated="true" maxLength="50" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[NetworkName]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementInstructionalText><![CDATA[]]></FormElementInstructionalText>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal">
+                <MVInternalOptionList><![CDATA[]]></MVInternalOptionList>
+                <MVPreselectedValues><![CDATA[]]></MVPreselectedValues>
+                <MVPreselectedValuesSQLStatement><![CDATA[]]></MVPreselectedValuesSQLStatement>
+                <MVSQLStatement><![CDATA[]]></MVSQLStatement>
+                <MVOptions>
+                  <DataRecordValue><![CDATA[]]></DataRecordValue>
+                </MVOptions>
+              </FormElementMultivalue>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="0" controlCaption="" dataElementName="EpgContainerID" displayOrder="21" distribution="vertical" enableControl="false" inputType="hidden" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="false" isSelectMultiple="false" isValidated="true" maxLength="25" revisionNumber="1" rows="0" sendData="false" generateUnique="false" isServerEditableOnly="true" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[EpgPrimaryID]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal"/>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+            <FormElement columns="80" controlCaption="" dataElementName="PortGroupName" displayOrder="22" distribution="vertical" enableControl="false" inputType="select" enableTypeahead="false" typeaheadMinStart="0" typeaheadMaxSearch="0" sliderType="basic" interval="" booleanTruePrompt="" booleanFalsePrompt="" isMandatory="false" isMultivalued="true" isSelectMultiple="false" isValidated="true" maxLength="256" revisionNumber="1" rows="5" sendData="false" generateUnique="false" isServerEditableOnly="false" showInGrid="false">
+              <MinValue><![CDATA[]]></MinValue>
+              <MaxValue><![CDATA[]]></MaxValue>
+              <IsSecure><![CDATA[false]]></IsSecure>
+              <IsPrivate><![CDATA[false]]></IsPrivate>
+              <IsKey><![CDATA[false]]></IsKey>
+              <FormElementPromptName><![CDATA[PortGroupName]]></FormElementPromptName>
+              <FormElementDataURL><![CDATA[]]></FormElementDataURL>
+              <FormElementInstructionalText><![CDATA[]]></FormElementInstructionalText>
+              <FormElementDefaultValue><![CDATA[]]></FormElementDefaultValue>
+              <FormElementMinValue><![CDATA[]]></FormElementMinValue>
+              <FormElementMaxValue><![CDATA[]]></FormElementMaxValue>
+              <FormElementMultivalue isPreselectedValuesQuery="false" preselectedValuesDataSource="Internal" referenceType="Internal">
+                <MVInternalOptionList><![CDATA[]]></MVInternalOptionList>
+                <MVPreselectedValues><![CDATA[]]></MVPreselectedValues>
+                <MVPreselectedValuesSQLStatement><![CDATA[]]></MVPreselectedValuesSQLStatement>
+                <MVSQLStatement><![CDATA[]]></MVSQLStatement>
+                <MVOptions>
+                  <DataRecordValue><![CDATA[]]></DataRecordValue>
+                </MVOptions>
+              </FormElementMultivalue>
+              <FormElementScriptFunctionBindings/>
+            </FormElement>
+          </FormElements>
+        </FormDictionary>
+      </FormDictionaries>
+      <Rules>
+        <Rule displayOrder="0" name="Populate ShortName" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="postsubmit" inputType="url" listOrder="1" triggerRank="2"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[SELECT ShortName FROM XtrCloudConnectionInfo WHERE PrimaryID = (SELECT CASE WHEN (CloudConnectionID IS NULL OR CloudConnectionID = 0) THEN ICFDConnectionID ELSE CloudConnectionID END FROM SiUCSDVM WHERE Name = #UCSD_VM_NIC_Operation_Action.Name#)]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions/>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="ShortName" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="ShortName" fieldLabel="" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Hide ErrorCode And ErrorDescription Fields" type="cr">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onload" inputType="url" listOrder="0" triggerRank="-1"/>
+          </TriggerEvents>
+          <RuleConditions>
+            <Condition conditionType="moment" listOrder="0" operation="equals">
+              <Left operand="moment"/>
+              <Right object="dictionarymoment" operand="ordering">
+                <DictionaryMoment name="ordering"/>
+              </Right>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="0" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="ErrorCode" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="1" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="ErrorDescription" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="2" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="SelectedVMName" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+        <Rule displayOrder="0" name="UnHide ErrorCode And ErrorDescription Fields" type="cr">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onload" inputType="url" listOrder="1" triggerRank="-1"/>
+          </TriggerEvents>
+          <RuleConditions>
+            <Condition conditionType="moment" listOrder="0" operation="not_equal">
+              <Left operand="moment"/>
+              <Right object="dictionarymoment" operand="ordering">
+                <DictionaryMoment name="ordering"/>
+              </Right>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="0" type="show" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="ErrorCode" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="1" type="show" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="ErrorDescription" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="2" type="show" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="SelectedVMName" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="3" type="readonly" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="ErrorCode" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="4" type="readonly" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="ErrorDescription" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="5" type="readonly" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="SelectedVMName" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="6" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="Name" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+        <Rule displayOrder="0" name="Populate Fields" type="mdr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="postsubmit" inputType="url" listOrder="0" triggerRank="1"/>
+          </TriggerEvents>
+          <Retrieval datasource="ASSETS" lookupTable="Virtual Machine" decryptSecuredValues="0" enableBasicAuth="0"/>
+          <LookupConditions>
+            <LookupCondition fieldName="Name" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" logicalOperator="="/>
+          </LookupConditions>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="DisplayName" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="DisplayName" fieldLabel="" fieldMap=""/>
+            <ResultField dictionaryFieldName="Status" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="Status" fieldLabel="" fieldMap=""/>
+            <ResultField dictionaryFieldName="VMId" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="VMId" fieldLabel="" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Populate PortGroup Identity" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[Populate PortGroup Identity]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="postsubmit" inputType="url" listOrder="3" triggerRank="4"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" shortName="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[SELECT DISTINCT pg.PortGroupIdentity FROM StPortGroupNames  pg
+WHERE pg.PortGroupName = #UCSD_VM_NIC_Operation_Action.PortGroupName#]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions/>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="nic1_portGroupIdentity" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="PortGroupIdentity" fieldLabel="PortGroupIdentity" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Populate Template VM Name" type="mdr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents/>
+          <Retrieval datasource="ASSETS" lookupTable="Virtual Machine" decryptSecuredValues="0" enableBasicAuth="0"/>
+          <LookupConditions>
+            <LookupCondition fieldName="Name" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" logicalOperator="="/>
+          </LookupConditions>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="VMTemplateName" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="TemplateVMName" fieldLabel="TemplateVMName" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Hide LAN Field" type="cr">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents/>
+          <RuleConditions>
+            <Condition conditionType="dictionary_field" listOrder="0" operation="equals">
+              <Left object="Data" operand="UCSD_VM_NIC_Operation_Action.VMTemplateName">
+                <DictionaryField name="VMTemplateName" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Left>
+              <Right operand=""/>
+            </Condition>
+            <Condition conditionType="or" listOrder="1">
+              <Left operand=""/>
+              <Right operand=""/>
+            </Condition>
+            <Condition conditionType="dictionary_field" listOrder="2" operation="equalsignorecase">
+              <Left object="Data" operand="UCSD_VM_NIC_Operation_Action.ContainerType">
+                <DictionaryField name="ContainerType" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Left>
+              <Right operand="APIC Container"/>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="0" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="LAN" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+        <Rule displayOrder="0" name="Populate ContainerTypeID" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onchange" inputType="hidden" listOrder="0" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" triggerRank="-1"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[SELECT OwnerDataTypeID FROM SiUCSDVM WHERE Name = #UCSD_VM_NIC_Operation_Action.Name#]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions>
+            <LookupCondition fieldName="683" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" logicalOperator="="/>
+          </LookupConditions>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="ContainerTypeID" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="OwnerDataTypeID" fieldLabel="OwnerDataTypeID" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Populate Container Type Feild" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="false">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onchange" inputType="hidden" listOrder="1" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" triggerRank="-1"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" lookupTable="MdrDataType" decryptSecuredValues="0" payload="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions>
+            <LookupCondition fieldName="DataTypeID" dictionaryFieldName="ContainerTypeID" dictionaryName="UCSD_VM_NIC_Operation_Action" logicalOperator="="/>
+          </LookupConditions>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="ContainerType" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="Name" fieldLabel="Name" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Populate Container Primary ID Field" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="postsubmit" inputType="url" listOrder="2" triggerRank="3"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" shortName="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[SELECT container.ContainerID FROM SiUCSDAPICContainer container
+JOIN SiUCSDVM vm ON container.PrimaryID = vm.OwnerID
+JOIN MdrDataType mdt ON vm.OwnerDataTypeID = mdt.DataTypeID AND mdt.LogicName = 'SiUCSDAPICContainer'
+WHERE vm.Name = #UCSD_VM_NIC_Operation_Action.Name#]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions>
+            <LookupCondition fieldName="683" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" logicalOperator="="/>
+          </LookupConditions>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="ContainerPimaryID" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="ContainerID" fieldLabel="ContainerID" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Populate LAN Field" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents/>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[SELECT Name FROM UdUCSDNetworkInfo WHERE OwnerID = #UCSD_VM_NIC_Operatin_Action.ContainerPrimaryID# AND OwnerDataTypeID = #UCSD_VM_NIC_Operatin_Action.ContainerTypeID#]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions/>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="LAN" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="Name" fieldLabel="Name" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Populate VMNetworkName Field" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onchange" inputType="hidden" listOrder="4" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" triggerRank="-1"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" shortName="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[SELECT epg.Label, epg.OwnerID FROM UdUCSDAPICEndpointGroup epg
+JOIN SiUCSDVM vm ON epg.PrimaryID = vm.APICContainerEndpointGroup
+WHERE vm.Name = #UCSD_VM_NIC_Operation_Action.Name#]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions/>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="VMNetworkName" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="Label" fieldLabel="Label" fieldMap=""/>
+            <ResultField dictionaryFieldName="EpgContainerID" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="OwnerID" fieldLabel="OwnerID" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Populate Isolated Network Name Field" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onchange" inputType="hidden" listOrder="5" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" triggerRank="-1"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" shortName="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[SELECT epg.Label FROM UdUCSDAPICEndpointGroup epg 
+WHERE epg.Type = 'Isolated' AND epg.ParentNetwork = #UCSD_VM_NIC_Operation_Action.VMNetworkName# 
+AND epg.OwnerID = #UCSD_VM_NIC_Operation_Action.EpgContainerID# ]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions/>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="NetworkName" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="Label" fieldLabel="Label" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Populate PortGroup Fields" type="ddr" isValidating="false" isImplicit="false" isEnforceSubscriptions="true">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onchange" inputType="hidden" listOrder="6" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" triggerRank="-1"/>
+          </TriggerEvents>
+          <Retrieval datasource="REQUESTCENTERDS" decryptSecuredValues="0" payload="" shortName="" ddrDelay="0" enableBasicAuth="0">
+            <SQLQuery><![CDATA[SELECT DISTINCT pg.PortGroupName FROM StPortGroupNames pg
+JOIN UdUCSDNetworkInterface ni ON pg.PortGroupName = ni.Name
+JOIN SiUCSDVM vm ON vm.PrimaryID = ni.OwnerID
+WHERE vm.Name = #UCSD_VM_NIC_Operation_Action.Name#]]></SQLQuery>
+          </Retrieval>
+          <LookupConditions/>
+          <SortConditions/>
+          <ResultDistributions>
+            <ResultField dictionaryFieldName="PortGroupName" dictionaryName="UCSD_VM_NIC_Operation_Action" fieldName="PortGroupName" fieldLabel="PortGroupName" fieldMap=""/>
+          </ResultDistributions>
+          <RuleConditions/>
+          <RuleActions/>
+        </Rule>
+        <Rule displayOrder="0" name="Hide APIC Fields" type="cr">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onchange" inputType="hidden" listOrder="2" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" triggerRank="-1"/>
+          </TriggerEvents>
+          <RuleConditions>
+            <Condition conditionType="dictionary_field" listOrder="0" operation="equals">
+              <Left object="Data" operand="UCSD_VM_NIC_Operation_Action.ContainerType">
+                <DictionaryField name="ContainerType" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Left>
+              <Right operand=""/>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="0" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="NetworkName" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="1" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="UserName" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="2" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="Password" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="3" type="mandatory" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="PortGroupName" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+        <Rule displayOrder="0" name="Hide PortGroup Field" type="cr">
+          <Description><![CDATA[]]></Description>
+          <TriggerEvents>
+            <TriggerEvent event="onchange" inputType="hidden" listOrder="3" dictionaryFieldName="Name" dictionaryName="UCSD_VM_NIC_Operation_Action" triggerRank="-1"/>
+          </TriggerEvents>
+          <RuleConditions>
+            <Condition conditionType="dictionary_field" listOrder="0" operation="equals">
+              <Left object="Data" operand="UCSD_VM_NIC_Operation_Action.ContainerType">
+                <DictionaryField name="ContainerType" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Left>
+              <Right operand="APIC Container"/>
+            </Condition>
+          </RuleConditions>
+          <RuleActions>
+            <Action listOrder="0" type="hide" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="PortGroupName" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="1" type="mandatory" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="NetworkName" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="2" type="mandatory" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="UserName" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+            <Action listOrder="3" type="mandatory" value="" valueType="0" priceAppliesTo="">
+              <Target object="Data">
+                <DictionaryField name="Password" dictionaryName="UCSD_VM_NIC_Operation_Action"/>
+              </Target>
+              <Source object=""/>
+            </Action>
+          </RuleActions>
+        </Rule>
+      </Rules>
+      <FormScriptFunctionBindings/>
+      <RelatedEntities>
+        <MDRDataTypes>
+          <DataType name="Virtual Machine" domainName="ASSETS" guid=""/>
+        </MDRDataTypes>
+      </RelatedEntities>
+    </Form>
+  </Forms>
+  <FormGroups>
+    <FormGroup name="Reserved" guid="6CD19C0A-1FB1-4AEC-8F0F-C2CF0250DEF3">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="reusable_forms_write" displayName="reusable_forms_write">
+            <Objects/>
+          </Operation>
+          <Operation name="reusable_forms_read" displayName="reusable_forms_read">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </FormGroup>
+    <FormGroup name="UCSD_Operations" guid="D7A253BB-0012-454C-9BDB-30004EDB521F">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="reusable_forms_write" displayName="reusable_forms_write">
+            <Objects/>
+          </Operation>
+          <Operation name="reusable_forms_read" displayName="reusable_forms_read">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </FormGroup>
+  </FormGroups>
+  <DictionaryGroups>
+    <DictionaryGroup name="&lt;s ID=&quot;10819&quot;/&gt;" guid="E15F635A-2304-45C6-952D-236A79121249">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+    </DictionaryGroup>
+    <DictionaryGroup name="UCSD_Operations" guid="71F51F59-D826-4CFB-8028-CFD1FEFB47D1">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+    </DictionaryGroup>
+  </DictionaryGroups>
+  <ServiceGroups>
+    <ServiceGroup name="UCSD_Operations" serviceTeam="Site Administration" authorizations="site" guid="5DC24EE2-17F5-41ED-BE92-0E90E6E3AF95">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+      <Authorization>
+        <ServiceGroupReview>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2000.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;6322&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupReview>
+        <ServiceGroupAuthorization>
+          <AuthRoles/>
+          <Escalations>
+            <Escalation authorizationType="SiteAdmin" after="2300.0" displayOrder="1" firstRecipient="sparre@cisco.com" firstNotification="&lt;s ID=&quot;3469&quot;/&gt;" secondRecipient="sparre@cisco.com" secondNotification="&lt;s ID=&quot;6321&quot;/&gt;" thirdRecipient="sparre@cisco.com" thirdNotification="&lt;s ID=&quot;3522&quot;/&gt;"/>
+          </Escalations>
+        </ServiceGroupAuthorization>
+      </Authorization>
+      <PositionNames/>
+      <PermissionsAssignment>
+        <OperationsWeArePermitted/>
+        <OperationsTheyArePermitted>
+          <Operation name="service_group_order_services" displayName="service_group_order_services">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="UCSD Services (UCS)" type="roletypeuserdefined" guid=""/>
+                  <RoleName name="UCSD_Operations" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_read" displayName="service_group_read">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="UCSD_Operations" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_write" displayName="service_group_write">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="UCSD_Operations" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_assign_rights" displayName="service_group_assign_rights">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="UCSD_Operations" type="roletypeuserdefined" guid=""/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="service_group_design_services" displayName="service_group_design_services">
+            <Objects/>
+          </Operation>
+          <Operation name="service_group_create_services" displayName="service_group_create_services">
+            <Objects/>
+          </Operation>
+          <Operation name="service_group_write_services" displayName="service_group_write_services">
+            <Objects/>
+          </Operation>
+          <Operation name="service_group_access_permitted_services" displayName="service_group_access_permitted_services">
+            <Objects/>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </ServiceGroup>
+  </ServiceGroups>
+  <Dictionaries>
+    <Dictionary name="UCSD_VM_NIC_Operation_Action" dictionaryGroupName="UCSD_Operations" dictionaryTemplateType="8" isActive="true" isExternal="false" isReportable="false" isServicePrivate="false" contactPerson="" status="0" serviceItemFamily="" guid="D1FB41D5-8587-40FA-A089-5B5B03897E36" logicName="UCSD_VM_NIC_Operation_Action">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description/>
+      <CategoryTypeName displayName="Service Items" name="Service Items"/>
+      <DBANotes><![CDATA[]]></DBANotes>
+      <RevisionNotes><![CDATA[]]></RevisionNotes>
+      <ExternalDictionaryInfo isQuery="false">
+        <SQLStatement><![CDATA[]]></SQLStatement>
+      </ExternalDictionaryInfo>
+      <DataElements>
+        <DataElement name="Name" displayOrder="1" maxLength="512" dataType="ServiceItemIdentifier" isMultivalued="false" scale="0" isSelected="false" showInGrid="true">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="VMId" displayOrder="2" maxLength="9" dataType="Number" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="Status" displayOrder="3" maxLength="128" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="DisplayName" displayOrder="4" maxLength="512" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="ErrorCode" displayOrder="5" maxLength="128" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="ErrorDescription" displayOrder="6" maxLength="512" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="vNIC" displayOrder="7" maxLength="128" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="SelectedVMName" displayOrder="8" maxLength="128" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="ShortName" displayOrder="9" maxLength="50" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="nic1_portGroupIdentity" displayOrder="10" maxLength="512" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="ContainerType" displayOrder="11" maxLength="128" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="VMTemplateName" displayOrder="12" maxLength="128" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="LAN" displayOrder="13" maxLength="50" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="ContainerPimaryID" displayOrder="14" maxLength="25" dataType="Number" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="ContainerTypeID" displayOrder="15" maxLength="25" dataType="Number" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="ContainerID" displayOrder="16" maxLength="25" dataType="Number" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="VMNetworkName" displayOrder="17" maxLength="50" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="UserName" displayOrder="18" maxLength="50" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="Password" displayOrder="19" maxLength="50" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="NetworkName" displayOrder="20" maxLength="50" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="EpgContainerID" displayOrder="21" maxLength="25" dataType="Number" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="PortGroupName" displayOrder="22" maxLength="256" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+      </DataElements>
+      <RelatedEntities>
+        <MDRDataTypes>
+          <DataType name="Virtual Machine" domainName="ASSETS" guid=""/>
+        </MDRDataTypes>
+        <MDRClassifications>
+          <MDRClassification name="UCS Director" domainName="ASSETS" guid=""/>
+        </MDRClassifications>
+      </RelatedEntities>
+      <DataTypeName name="Virtual Machine" domainName="ASSETS" domainDisplayName="&lt;s ID=&quot;11723&quot;/&gt;"/>
+    </Dictionary>
+    <Dictionary name="XX_Tenant_Information_XX" dictionaryGroupName="&lt;s ID=&quot;10819&quot;/&gt;" dictionaryTemplateType="1" isActive="true" isExternal="false" isReportable="false" isServicePrivate="false" contactPerson="" status="0" serviceItemFamily="" guid="11172587-D749-49A5-8779-F64C7C321966" logicName="tenant-information">
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <Description>
+        <Text><![CDATA[Tenant Information Section]]></Text>
+      </Description>
+      <CategoryTypeName displayName="None" name="None"/>
+      <DBANotes><![CDATA[]]></DBANotes>
+      <DefaultCaption><![CDATA[Select team]]></DefaultCaption>
+      <RevisionNotes><![CDATA[]]></RevisionNotes>
+      <ExternalDictionaryInfo isQuery="false">
+        <SQLStatement><![CDATA[]]></SQLStatement>
+      </ExternalDictionaryInfo>
+      <DataElements>
+        <DataElement name="XX_XX_TMEnabled_XX_XX" displayOrder="1" maxLength="512" dataType="Text" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+        <DataElement name="XX_XX_TeamName_XX_XX" displayOrder="2" maxLength="100" dataType="Tenant" isMultivalued="false" scale="0" isSelected="false" showInGrid="false">
+          <IsSecure><![CDATA[false]]></IsSecure>
+          <IsPrivate><![CDATA[false]]></IsPrivate>
+          <IsKey><![CDATA[false]]></IsKey>
+        </DataElement>
+      </DataElements>
+      <RelatedEntities/>
+    </Dictionary>
+  </Dictionaries>
+  <ScriptLibraries/>
+  <ScriptFunctions/>
+  <MDRDataTypes>
+    <DataType name="Virtual Machine" logicName="SiUCSDVM" domainName="ASSETS" classificationName="UCS Director" statusable="true" isHidden="false" enableStackConfiguration="false" shareable="true" hierarchyEnabled="false" hasSubscriptionFlag="true">
+      <DataTypeDefinition name="Name" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11686&quot;/&gt;" friendlyName="false" showInMyStuffGrid="false">
+        <Caption><![CDATA[<s ID="11608"/>]]></Caption>
+        <Mandatory><![CDATA[true]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[1]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="UCSDName" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17242"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[2]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="HostName" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17243"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[3]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="IPAddress" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17244"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[4]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="MACAddress" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17533"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[5]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="VMId" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11687&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17245"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[6]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="ICFDVMId" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11687&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17246"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[7]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="vCenterVMId" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17247"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[8]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="Description" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="881"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[9]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="ProvisionedTime" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17248"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[10]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="GuestOS" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="11545"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[11]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="PasswordType" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11687&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17249"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[12]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="AdminLogin" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17250"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[13]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="AdminPassword" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17251"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[14]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="ConsoleEnabled" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11687&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17252"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[15]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="ConsoleProtocol" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17253"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[16]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="ConsoleIP" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17254"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[17]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="ConsolePort" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11687&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17255"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[18]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="ConsolePassword" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17256"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[19]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="Status" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="378"/>]]></Caption>
+        <Mandatory><![CDATA[true]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[20]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="DisplayName" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11686&quot;/&gt;" friendlyName="true" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="11865"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[21]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="CloudConnectionID" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11687&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17262"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[22]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="vDC" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="16056"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[23]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="CPUs" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11687&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="16788"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[24]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="RAM" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11687&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17124"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[25]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="Storage" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11690&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17127"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[26]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="ICFDConnectionID" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11687&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17263"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[27]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="CloudName" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17257"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[28]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="CloudType" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11685&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17258"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[29]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="Tag" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11686&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17261"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[30]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="SRID" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11687&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17259"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[31]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="TemplateVMName" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11686&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17260"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[32]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="UCSPMVMId" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11686&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17235"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[33]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="UCSPMDeviceName" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11686&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[<s ID="17275"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[34]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="ClientID" containingDataTypeName="Virtual Machine" dataTypeName="&lt;s ID=&quot;11686&quot;/&gt;" friendlyName="false" showInMyStuffGrid="true">
+        <Caption><![CDATA[Client ID]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[true]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[35]]></DisplayOrder>
+        <SVisible><![CDATA[true]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="VMNetworkInterfaces" containingDataTypeName="Virtual Machine" dataTypeName="UCSD VM Network Interface" friendlyName="false" showInMyStuffGrid="false">
+        <Caption><![CDATA[<s ID="17264"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[true]]></Multivalue>
+        <Visible><![CDATA[false]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[36]]></DisplayOrder>
+        <SVisible><![CDATA[false]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="APICContainerEndpointGroup" containingDataTypeName="Virtual Machine" dataTypeName="APIC Container Endpoint Group" friendlyName="false" showInMyStuffGrid="false">
+        <Caption><![CDATA[<s ID="17265"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[false]]></Multivalue>
+        <Visible><![CDATA[false]]></Visible>
+        <Reference><![CDATA[true]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[37]]></DisplayOrder>
+        <SVisible><![CDATA[false]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="VMDatastore" containingDataTypeName="Virtual Machine" dataTypeName="UCSD VM Data Store" friendlyName="false" showInMyStuffGrid="false">
+        <Caption><![CDATA[<s ID="17266"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[true]]></Multivalue>
+        <Visible><![CDATA[false]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[38]]></DisplayOrder>
+        <SVisible><![CDATA[false]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <DataTypeDefinition name="VMdisk" containingDataTypeName="Virtual Machine" dataTypeName="UCSD VM Disk" friendlyName="false" showInMyStuffGrid="false">
+        <Caption><![CDATA[<s ID="17267"/>]]></Caption>
+        <Mandatory><![CDATA[false]]></Mandatory>
+        <Multivalue><![CDATA[true]]></Multivalue>
+        <Visible><![CDATA[false]]></Visible>
+        <Reference><![CDATA[false]]></Reference>
+        <Lookup><![CDATA[false]]></Lookup>
+        <DisplayOrder><![CDATA[39]]></DisplayOrder>
+        <SVisible><![CDATA[false]]></SVisible>
+        <BusinessKey><![CDATA[0]]></BusinessKey>
+        <AttributeType><![CDATA[0]]></AttributeType>
+        <SPrivate><![CDATA[false]]></SPrivate>
+        <InputType><![CDATA[1]]></InputType>
+        <ShowInStack><![CDATA[true]]></ShowInStack>
+        <Min><![CDATA[0]]></Min>
+        <Max><![CDATA[0]]></Max>
+        <ReadOnly><![CDATA[false]]></ReadOnly>
+        <PrimaryKey><![CDATA[false]]></PrimaryKey>
+        <Parameter><![CDATA[false]]></Parameter>
+        <DefaultValue><![CDATA[]]></DefaultValue>
+      </DataTypeDefinition>
+      <StatusDefinitions>
+        <StatusDefinition name="Active">
+          <StatusTransitions>
+            <StatusTransition name="Migrate VM to Cloud in progress"/>
+            <StatusTransition name="Deleting disk"/>
+            <StatusTransition name="Delete Snapshot in progress"/>
+            <StatusTransition name="Standby in progress"/>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Reset in progress"/>
+            <StatusTransition name="Reboot in progress"/>
+            <StatusTransition name="Shutdown in progress"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Clone in progress"/>
+            <StatusTransition name="Powering off"/>
+            <StatusTransition name="Restore in progress"/>
+            <StatusTransition name="Suspension in progress"/>
+            <StatusTransition name="Taking snapshot"/>
+            <StatusTransition name="Delete in progress"/>
+            <StatusTransition name="Terminate in progress"/>
+            <StatusTransition name="Migrate VM to Public Cloud in progress"/>
+            <StatusTransition name="Migrate VM to Enterprise in progress"/>
+            <StatusTransition name="Failed"/>
+            <StatusTransition name="Adding disk"/>
+            <StatusTransition name="Deleting vNIC"/>
+            <StatusTransition name="Adding vNIC"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Adding disk">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Adding disk"/>
+            <StatusTransition name="Failed"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Adding vNIC">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Adding vNIC"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Failed"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Being provisioned">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Being provisioned"/>
+            <StatusTransition name="Failed"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Clone in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Clone in progress"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Delete in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Delete Snapshot in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Failed"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Deleting disk">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Deleting disk"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Failed"/>
+            <StatusTransition name="Active"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Deleting vNIC">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Deleting vNIC"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Failed"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Failed">
+          <StatusTransitions>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Failed"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Inactive">
+          <StatusTransitions>
+            <StatusTransition name="Migrate VM to Cloud in progress"/>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Delete Snapshot in progress"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Powering on"/>
+            <StatusTransition name="Restore in progress"/>
+            <StatusTransition name="Suspension in progress"/>
+            <StatusTransition name="Delete in progress"/>
+            <StatusTransition name="Terminate in progress"/>
+            <StatusTransition name="Clone in progress"/>
+            <StatusTransition name="Migrate VM to Public Cloud in progress"/>
+            <StatusTransition name="Migrate VM to Enterprise in progress"/>
+            <StatusTransition name="Deleting disk"/>
+            <StatusTransition name="Resize in progress"/>
+            <StatusTransition name="Deleting vNIC"/>
+            <StatusTransition name="Adding vNIC"/>
+            <StatusTransition name="Taking snapshot"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Migrate VM to Cloud in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Migrate VM to Cloud in progress"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Migrate VM to Enterprise in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Migrate VM to Enterprise in progress"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Migrate VM to Public Cloud in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Migrate VM to Public Cloud in progress"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Powering off">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Powering off"/>
+            <StatusTransition name="Active"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Powering on">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Powering on"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Inactive"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Reboot in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Reboot in progress"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Reset in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Reset in progress"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Resize in progress">
+          <StatusTransitions>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Resize in progress"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Failed"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Restore in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Restore in progress"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Shutdown in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Shutdown in progress"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Standby in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Standby in progress"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Suspension in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Suspension in progress"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Taking snapshot">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Inactive"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Taking snapshot"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Terminate in progress">
+          <StatusTransitions>
+            <StatusTransition name="Terminated"/>
+            <StatusTransition name="Active"/>
+            <StatusTransition name="Inactive"/>
+          </StatusTransitions>
+        </StatusDefinition>
+        <StatusDefinition name="Terminated">
+          <StatusTransitions/>
+        </StatusDefinition>
+      </StatusDefinitions>
+      <OperationDefinitions>
+        <OperationDefinition operation="Add vNIC" isBillable="false" resultingStatus="Adding vNIC"/>
+        <OperationDefinition operation="Clone" isBillable="false" resultingStatus="Clone in progress"/>
+        <OperationDefinition operation="Create" isBillable="false" resultingStatus="&lt;s ID=&quot;14447&quot;/&gt;"/>
+        <OperationDefinition operation="Create disk" isBillable="false" resultingStatus="Adding disk"/>
+        <OperationDefinition operation="Delete" isBillable="false" resultingStatus="&lt;s ID=&quot;14447&quot;/&gt;"/>
+        <OperationDefinition operation="Delete VM" isBillable="false" resultingStatus="Delete in progress"/>
+        <OperationDefinition operation="Delete VM Disk" isBillable="false" resultingStatus="Deleting disk"/>
+        <OperationDefinition operation="Delete VM Snapshot" isBillable="false" resultingStatus="Delete Snapshot in progress"/>
+        <OperationDefinition operation="Delete vNIC" isBillable="false" resultingStatus="Deleting vNIC"/>
+        <OperationDefinition operation="Inactive VM" isBillable="false" resultingStatus="Inactive"/>
+        <OperationDefinition operation="Migrate VM to Cloud" isBillable="false" resultingStatus="Migrate VM to Cloud in progress"/>
+        <OperationDefinition operation="Migrate VM to Enterprise" isBillable="false" resultingStatus="Migrate VM to Enterprise in progress"/>
+        <OperationDefinition operation="Operation Complete" isBillable="false" resultingStatus="Active"/>
+        <OperationDefinition operation="Power off" isBillable="false" resultingStatus="Powering off"/>
+        <OperationDefinition operation="Power on" isBillable="false" resultingStatus="Powering on"/>
+        <OperationDefinition operation="Reboot" isBillable="false" resultingStatus="Reboot in progress"/>
+        <OperationDefinition operation="Reset" isBillable="false" resultingStatus="Reset in progress"/>
+        <OperationDefinition operation="Resize" isBillable="false" resultingStatus="Resize in progress"/>
+        <OperationDefinition operation="Restore Snapshot" isBillable="false" resultingStatus="Restore in progress"/>
+        <OperationDefinition operation="Shutdown Guest OS" isBillable="false" resultingStatus="Shutdown in progress"/>
+        <OperationDefinition operation="Snapshot" isBillable="false" resultingStatus="Taking snapshot"/>
+        <OperationDefinition operation="StandBy" isBillable="false" resultingStatus="Standby in progress"/>
+        <OperationDefinition operation="Suspend" isBillable="false" resultingStatus="Suspension in progress"/>
+        <OperationDefinition operation="Terminate" isBillable="false" resultingStatus="Terminate in progress"/>
+        <OperationDefinition operation="Update" isBillable="false" resultingStatus="&lt;s ID=&quot;14447&quot;/&gt;"/>
+        <OperationDefinition operation="VM Provision in progress" isBillable="false" resultingStatus="Being provisioned"/>
+        <OperationDefinition operation="Migrate VM to Public Cloud" isBillable="false" resultingStatus="Migrate VM to Public Cloud in progress"/>
+      </OperationDefinitions>
+      <PermissionsAssignment>
+        <OperationsTheyArePermitted>
+          <Operation name="content_def_read_allcontentdata" displayName="content_def_read_allcontentdata">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="UCSD Sys Admin" type="roletypeuserdefined"/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="content_def_write_allcontentdata" displayName="content_def_write_allcontentdata">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="UCSD Sys Admin" type="roletypeuserdefined"/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </DataType>
+  </MDRDataTypes>
+  <MDRClassifications>
+    <Classification name="UCS Director" domainName="ASSETS">
+      <Description><![CDATA[<s ID="15810"/>]]></Description>
+      <LogicName><![CDATA[UCS Director]]></LogicName>
+      <Permissible><![CDATA[false]]></Permissible>
+      <SystemDefined><![CDATA[true]]></SystemDefined>
+      <FirstTreeNode><![CDATA[false]]></FirstTreeNode>
+      <PermissionsAssignment>
+        <OperationsTheyArePermitted>
+          <Operation name="mdr_class_read" displayName="mdr_class_read">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="UCSD Services (UCS)" type="roletypeuserdefined"/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+          <Operation name="mdr_class_write" displayName="mdr_class_write">
+            <Objects>
+              <Object name="Role" displayName="Role">
+                <Instances>
+                  <RoleName name="UCSD Services (UCS)" type="roletypeuserdefined"/>
+                </Instances>
+              </Object>
+            </Objects>
+          </Operation>
+        </OperationsTheyArePermitted>
+      </PermissionsAssignment>
+    </Classification>
+  </MDRClassifications>
+  <MDRDataTypeRelatedServices>
+    <MDRDataTypeRelatedService dataTypeLogicName="SiUCSDVM" domainName="ASSETS">
+      <RelatedServices>
+        <RelatedService name="Clone VM" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0" connector="and"/>
+            <RelatedServiceCondition attribute="Status" operation="in">
+              <OrderableStatuses>
+                <OrderableStatus name="Active"/>
+                <OrderableStatus name="Inactive"/>
+              </OrderableStatuses>
+            </RelatedServiceCondition>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Delete VM" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0" connector="and"/>
+            <RelatedServiceCondition attribute="Status" operation="in">
+              <OrderableStatuses>
+                <OrderableStatus name="Inactive"/>
+                <OrderableStatus name="Failed"/>
+                <OrderableStatus name="Terminated"/>
+              </OrderableStatuses>
+            </RelatedServiceCondition>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Power Off VM" serviceType="Configuration">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="Status" operation="is_equal_to" value="Active" connector="and"/>
+            <RelatedServiceCondition attribute="CloudType" operation="is_not_equal_to" value="VMWare"/>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Power On VM" serviceType="Configuration">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="Status" operation="is_equal_to" value="Inactive" connector="and"/>
+            <RelatedServiceCondition attribute="CloudType" operation="is_not_equal_to" value="VMWare"/>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Revert VM Snapshot" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0" connector="and"/>
+            <RelatedServiceCondition attribute="Status" operation="in">
+              <OrderableStatuses>
+                <OrderableStatus name="Active"/>
+                <OrderableStatus name="Inactive"/>
+              </OrderableStatuses>
+            </RelatedServiceCondition>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Delete VM Snapshot" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0" connector="and"/>
+            <RelatedServiceCondition attribute="Status" operation="in">
+              <OrderableStatuses>
+                <OrderableStatus name="Active"/>
+                <OrderableStatus name="Inactive"/>
+              </OrderableStatuses>
+            </RelatedServiceCondition>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Suspend VM" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="Status" operation="is_equal_to" value="Active" connector="and"/>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0"/>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Create VM Snapshot" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0" connector="and"/>
+            <RelatedServiceCondition attribute="Status" operation="in">
+              <OrderableStatuses>
+                <OrderableStatus name="Active"/>
+                <OrderableStatus name="Inactive"/>
+              </OrderableStatuses>
+            </RelatedServiceCondition>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Reboot VM" serviceType="Configuration">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="Status" operation="is_equal_to" value="Active" connector="and"/>
+            <RelatedServiceCondition attribute="CloudType" operation="is_not_equal_to" value="VMWare"/>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Reset VM" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="Status" operation="is_equal_to" value="Active" connector="and"/>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0"/>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Shutdown VM Guest" serviceType="Configuration">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="Status" operation="is_equal_to" value="Active" connector="and"/>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0"/>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Standby VM" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="Status" operation="is_equal_to" value="Active" connector="and"/>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0"/>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Delete VM Disk" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0" connector="and"/>
+            <RelatedServiceCondition attribute="Status" operation="in">
+              <OrderableStatuses>
+                <OrderableStatus name="Inactive"/>
+              </OrderableStatuses>
+            </RelatedServiceCondition>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Create VM Disk" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0" connector="and"/>
+            <RelatedServiceCondition attribute="Status" operation="in">
+              <OrderableStatuses>
+                <OrderableStatus name="Active"/>
+              </OrderableStatuses>
+            </RelatedServiceCondition>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Delete vNIC" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0" connector="and"/>
+            <RelatedServiceCondition attribute="Status" operation="in">
+              <OrderableStatuses>
+                <OrderableStatus name="Active"/>
+                <OrderableStatus name="Inactive"/>
+              </OrderableStatuses>
+            </RelatedServiceCondition>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Add vNIC" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0" connector="and"/>
+            <RelatedServiceCondition attribute="Status" operation="in">
+              <OrderableStatuses>
+                <OrderableStatus name="Active"/>
+                <OrderableStatus name="Inactive"/>
+              </OrderableStatuses>
+            </RelatedServiceCondition>
+          </RelatedServiceConditions>
+        </RelatedService>
+        <RelatedService name="Resize VM" serviceType="Associated">
+          <RelatedServiceConditions>
+            <RelatedServiceCondition attribute="CloudConnectionID" operation="more_than" value="0" connector="and"/>
+            <RelatedServiceCondition attribute="Status" operation="in">
+              <OrderableStatuses>
+                <OrderableStatus name="Inactive"/>
+              </OrderableStatuses>
+            </RelatedServiceCondition>
+          </RelatedServiceConditions>
+        </RelatedService>
+      </RelatedServices>
+    </MDRDataTypeRelatedService>
+  </MDRDataTypeRelatedServices>
+</rex></DeploymentXML>
+  <HasImage>false</HasImage>
+  <CreatorObjectId>0</CreatorObjectId>
+  <CreatorObjectInstanceId>0</CreatorObjectInstanceId>
+  <DocSize>0</DocSize>
+  <TenantId>0</TenantId>
+  <UploadedBy>0</UploadedBy>
+</NSDeploymentPackage>
